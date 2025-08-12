@@ -45,28 +45,21 @@ MAPE	3.17%	Model achieves ~96.8% accuracy on average.
 
 🚀 Installation & Usage
 1️⃣ Clone Repository
-bash
-Copy
-Edit
 git clone https://github.com/<your-username>/KLSE-Maybank-LSTM.git
 cd KLSE-Maybank-LSTM
+
 2️⃣ Create Virtual Environment
-bash
-Copy
-Edit
 python -m venv .venv
 source .venv/bin/activate  # Mac/Linux
 .venv\Scripts\activate     # Windows
+
 3️⃣ Install Requirements
-bash
-Copy
-Edit
 pip install -r requirements.txt
+
 4️⃣ Run the App
-bash
-Copy
-Edit
 streamlit run app.py
+
+
 🗂 Folder Structure
 graphql
 Copy
