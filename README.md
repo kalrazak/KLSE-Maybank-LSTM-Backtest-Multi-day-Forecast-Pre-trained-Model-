@@ -44,6 +44,7 @@ MAPE	3.17%	Model achieves ~96.8% accuracy on average.
 ⚠ Disclaimer: Stock prices are influenced by unpredictable market factors.
 
 🚀 Installation & Usage
+
 1️⃣ Clone Repository
 git clone https://github.com/<your-username>/KLSE-Maybank-LSTM.git
 cd KLSE-Maybank-LSTM
