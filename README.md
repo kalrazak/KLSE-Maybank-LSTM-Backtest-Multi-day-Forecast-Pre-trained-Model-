@@ -60,17 +60,6 @@ pip install -r requirements.txt
 4️⃣ Run the App
 streamlit run app.py
 
-
-🗂 Folder Structure
-graphql
-Copy
-Edit
-├── app.py                  # Main Streamlit app
-├── models/                 # Pre-trained LSTM model & scaler
-│   ├── 1155_KL_lstm.h5
-│   ├── 1155_KL_scaler.pkl
-├── requirements.txt        # Python dependencies
-└── README.md               # Project documentation
 📌 Notes
 Data source: Yahoo Finance
 
