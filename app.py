@@ -30,7 +30,7 @@ st.set_page_config(
 @st.cache_data(show_spinner=False)
 def fetch_data_with_indicators(ticker: str, start="2010-01-01"):
     """Fetch price data and add SMA, MACD, RSI."""
-    end = dt.datetime.today().strftime("%Y-%m-%d")
+    end = (dt.datetime.today() + dt.timedelta(days=1)).strftime("%Y-%m-%d")
     df = yf.download(ticker, start=start, end=end, auto_adjust=True)
 
     # If multi-index columns (happens for some tickers), flatten
@@ -104,7 +104,12 @@ st.sidebar.caption("© For learning/portfolio. Not investment advice.")
 # ---------------------------
 # Main
 # ---------------------------
+
+# Real-Time Data Fetch Button
 st.title("📈 KLSE Maybank – LSTM Backtest & Multi-day Forecast (Pre-trained Model)")
+if st.button("🔄 Fetch Real-Time Data", help="Refresh and fetch the latest data from Yahoo Finance"):
+    st.cache_data.clear()
+    st.rerun()
 
 # 1) Load Data with Technical Indicators
 with st.spinner("Downloading historical data & computing indicators..."):
